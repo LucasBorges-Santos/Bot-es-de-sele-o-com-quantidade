@@ -1,174 +1,67 @@
 <head>
-    <style>
-        .flex-container {
-            display: flex;
-            width: 100px;
-            height: 34px;
-        }
-
-        .button{
-            background-color: #b214b8;
-            color: black;
-            border: 2px solid #b214b8; /* Green */
-            -webkit-transition-duration: 0.4s; /* Safari */
-            transition-duration: 0.4s;
-            color: white;
-            outline: thin dotted !important;
-            outline: 0px auto -webkit-focus-ring-color !important;
-            outline-offset: 0px !important;
-        }
-
-        .button:hover {
-            background-color: #d222d8;
-            color: rgb(255, 255, 255);
-            border: 2px solid #b214b8; /* Green */
-        }
-
-        .button:active {
-            background-color: #ffffff; /* Green */
-            color: #b214b8;
-            border: 2px solid #b214b8;
-          }
-
-        .buttonBorderLeft {
-            border-top-left-radius: 7px;
-            border-bottom-left-radius: 7px;
-        }
-
-        .buttonBorderRight {
-            border-top-right-radius: 7px;
-            border-bottom-right-radius: 7px;
-        }
-
-        .box{
-            background-color: #ffffff; /* Green */
-            color: #b214b8;
-            border-top: 2px solid #b214b8;
-            border-bottom: 2px solid #b214b8;
-            height: 34px;
-            width: 35px;
-            
-           
-        }
-
-        .p{
-            font-family: "Lucida Console", "Courier New", monospace;
-            margin: 25% !important;
-            font-size: 20px;
-        }
-    </style>
+    <script src="js/função_botão.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/styles.css" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 </head>
-<div class="card" style="width: 18rem;">
-    <img class="card-img-top" src="6.jpg" alt="Card image cap">
-    <div class="card-body">
-        <h5 class="card-title">Mix para açai</h5>
-        <p class="card-text">Chocolate ao leite original ou chocalate branco + 2 frutas de sua preferência</p>
+<body>
+    <h1>Lanches</h1>
 
-        <div class="flex-container">
+    <hr>
 
-            <button class='button buttonBorderLeft' onclick='subtrair("Mix-para-açai")'>
-                <svg width="20px" height="20px" viewBox="0 0 16 16" class="bi bi-caret-left" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                    <path fill-rule="evenodd" d="M10 12.796L4.519 8 10 3.204v9.592zm-.659.753l-5.48-4.796a1 1 0 0 1 0-1.506l5.48-4.796A1 1 0 0 1 11 3.204v9.592a1 1 0 0 1-1.659.753z"/>
-                </svg>
-            </button>
-        
-            <div class='box'>
-                <p class='p' id='Mix-para-açai'>0</p>
+    <div class="row">
+        <div class="card" style="width: 18rem;">
+            <img class="card-img-top" src="IMG/6.jpg" alt="Card image cap">
+            <div class="card-body">
+                <h5 class="card-title">Mix para açai</h5>
+                <p class="card-text">Chocolate ao leite original ou chocalate branco + 2 frutas de sua preferência</p>
+                <div class="flex-container">
+                    <button class='button buttonBorderLeft' onclick='subtrair("Mix-para-açai")'>
+                        <svg width="20px" height="20px" viewBox="0 0 16 16" class="bi bi-caret-left" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" d="M10 12.796L4.519 8 10 3.204v9.592zm-.659.753l-5.48-4.796a1 1 0 0 1 0-1.506l5.48-4.796A1 1 0 0 1 11 3.204v9.592a1 1 0 0 1-1.659.753z"/>
+                        </svg>
+                    </button>
+                    <div class='box'>
+                        <p class='p' id='Mix-para-açai'>0</p>
+                    </div>
+                    <button class='button buttonBorderRight' onclick='adicionar("Mix-para-açai")' >
+                        <svg width="20px" height="20px" viewBox="0 0 16 16" class="bi bi-caret-right-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12.14 8.753l-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"/>
+                        </svg>
+                    </button>  
+
+                </div>
             </div>
-        
-            <button class='button buttonBorderRight' onclick='adicionar("Mix-para-açai")' >
-                <svg width="20px" height="20px" viewBox="0 0 16 16" class="bi bi-caret-right-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M12.14 8.753l-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"/>
-                </svg>
-            </button>  
+        </div>
 
+        <div class="card" style="width: 18rem;">
+            <img class="card-img-top" src="IMG/id4.jpg" alt="Card image cap">
+            <div class="card-body">
+                <h5 class="card-title">X-Burger</h5>
+                <p class="card-text">Pão brioche , maionese da casa e molho da casa , queijo prato , carne 120G</p>
+                <div class="flex-container">
+                    <button class='button buttonBorderLeft' onclick='subtrair("hamburguer")'>
+                        <svg width="20px" height="20px" viewBox="0 0 16 16" class="bi bi-caret-left" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" d="M10 12.796L4.519 8 10 3.204v9.592zm-.659.753l-5.48-4.796a1 1 0 0 1 0-1.506l5.48-4.796A1 1 0 0 1 11 3.204v9.592a1 1 0 0 1-1.659.753z"/>
+                        </svg>
+                    </button>
+                    <div class='box'>
+                        <p class='p' id='hamburguer'>0</p>
+                    </div>
+                    <button class='button buttonBorderRight' onclick='adicionar("hamburguer")' >
+                        <svg width="20px" height="20px" viewBox="0 0 16 16" class="bi bi-caret-right-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12.14 8.753l-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"/>
+                        </svg>
+                    </button>  
+                </div>
+            </div>
         </div>
     </div>
-  </div>
 
-<div class="card" style="width: 18rem;">
-    <img class="card-img-top" src="id4.jpg" alt="Card image cap">
-    <div class="card-body">
-        <h5 class="card-title">Mix para açai</h5>
-        <p class="card-text">Chocolate ao leite original ou chocalate branco + 2 frutas de sua preferência</p>
+    <br>
 
-        <div class="flex-container">
-
-            <button class='button buttonBorderLeft' onclick='subtrair("hamburguer")'>
-                <svg width="20px" height="20px" viewBox="0 0 16 16" class="bi bi-caret-left" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                    <path fill-rule="evenodd" d="M10 12.796L4.519 8 10 3.204v9.592zm-.659.753l-5.48-4.796a1 1 0 0 1 0-1.506l5.48-4.796A1 1 0 0 1 11 3.204v9.592a1 1 0 0 1-1.659.753z"/>
-                </svg>
-            </button>
-        
-            <div class='box'>
-                <p class='p' id='hamburguer'>0</p>
-            </div>
-        
-            <button class='button buttonBorderRight' onclick='adicionar("hamburguer")' >
-                <svg width="20px" height="20px" viewBox="0 0 16 16" class="bi bi-caret-right-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M12.14 8.753l-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"/>
-                </svg>
-            </button>  
-        </div>
-    </div>
-</div>
-
-<br>
-
-<button class='button' onclick='submit()'>
-    Enviar
-</button>
-
-<script>
-    var carrinho = []
-    function submit(){
-        console.log(carrinho)
-    }
-
-    function adicionar(nome){
-        let div = document.getElementById(nome).innerText;
-        let valor = parseInt(div)
-        let x = document.getElementById(nome);
-        
-        if (valor <= 8){
-            valor = valor + 1;
-            x.innerHTML = valor;
-            let pedido = {'nome': nome , 'quantidade' : valor};
-            objIndex = carrinho.findIndex(pedido => pedido.nome == nome)
-
-            if (objIndex == -1){
-                carrinho.push(pedido)
-            }
-
-            else{
-                carrinho[objIndex] = pedido;
-            }
-        } 
-    }
-
-    function subtrair(nome){
-        let div = document.getElementById(nome).innerText;
-        let valor = parseInt(div)
-        let x = document.getElementById(nome);
-        if (valor != 0){
-            valor = valor - 1;
-            x.innerHTML = valor;
-            let pedido = {'nome': nome , 'quantidade' : valor};
-            objIndex = carrinho.findIndex(pedido => pedido.nome === nome);
-            
-
-            if (objIndex == -1){
-                carrinho.push(pedido)
-            }
-
-            else{
-                carrinho[objIndex] = pedido;  
-
-                if(carrinho[objIndex]['quantidade'] == 0){
-                    carrinho.splice(objIndex, 1);
-                }             
-            }
-        } 
-    }
-</script>
+    <button class='button' onclick='submit()'>
+        Enviar
+    </button>
+    <h3>Resultado: </h3>
+    <p id = 'carrinho' ></p>
+</body>
